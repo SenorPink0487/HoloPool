@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HoloPool · 互动预览</title>
+    <link rel="icon" href="/pool/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/showcase.css" />
+  </head>
+  <body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <main class="card-inner">
+      <div class="bg-typography" aria-hidden="true">POOL</div>
+      <div class="proj-content">
+        <h1 class="proj-title">HoloPool</h1>
+        <p class="proj-desc">沉浸式三维物理台球体验室。融合真实刚体动力学与第三人称自由漫游，支持就位击球与蓄力杆法；内置动态轨迹推演与力度落点预览，打造兼具竞技与教学的台球沙盒。</p>
+        <a href="/" class="launch-btn">
+          <span>Launch HoloPool</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="pool-sandbox-container" id="poolSandbox">
+        <canvas id="poolCanvas" class="pool-canvas" aria-label="互动台球预览"></canvas>
+      </div>
+    </main>
+    <script type="module" src="/src/showcase.js"></script>
+  </body>
+</html>
